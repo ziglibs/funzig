@@ -1,7 +1,7 @@
 const std = @import("std");
 const testing = std.testing;
 
-fn getFields(args: anytype) []const std.builtin.TypeInfo.StructField {
+fn getFields(comptime args: anytype) []const std.builtin.TypeInfo.StructField {
     return @typeInfo(@TypeOf(args)).Struct.fields;
 }
 
@@ -63,6 +63,7 @@ fn addOne(num: u8) u8 {
 }
 
 fn addOneError(num: u8) !u8 {
+    if (num == 69) return error.Nice;
     return num * 2;
 }
 
@@ -73,8 +74,7 @@ test "Basic pipe" {
         addOneError
     });
 
-    std.debug.print("\n\n{}\n\n", .{
-        try concat_pipe(10) // should output 22!
-    });
+    std.testing.expectEqual(@as(u8, 22), try concat_pipe(10));
+    std.testing.expectError(error.Nice, concat_pipe(68));
 
 }
