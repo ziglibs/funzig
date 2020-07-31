@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/ziglibs/funzig/master/.github/assets/funzig.svg)
+![](https://raw.githubusercontent.com/ziglibs/funzig/d44b9307ca21c38fe11f0766bc956e1b17bcd26f/.github/assets/funzig.svg)
 
 # funzig
 
