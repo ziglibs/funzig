@@ -1,7 +1,9 @@
-# pipe
+![](https://raw.githubusercontent.com/ziglibs/funzig/master/.github/assets/funzig.svg)
 
-Simple piping library that demonstrates zig's neat compile-time features.
+# funzig
+
+Functional Zig features!
 
 ## Usage
 
-Check out `tests.zig`!
+Check the tests in all the files `src`!
