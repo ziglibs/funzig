@@ -1,5 +1,6 @@
 const std = @import("std");
-usingnamespace @import("src/map.zig");
+pub usingnamespace @import("src/map.zig");
+pub usingnamespace @import("src/find.zig");
 pub const pipe = @import("src/pipe.zig").pipe;
 pub const reduce = @import("src/reduce.zig").reduce;
 
