@@ -4,7 +4,7 @@ Functional Zig features!
 
 <!-- omit in toc -->
 ## Table of Contents
-- [Features](#features)
+- [Functions](#functions)
 
 ## Functions
 
