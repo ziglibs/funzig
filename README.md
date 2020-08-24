@@ -6,9 +6,13 @@ Functional Zig features!
 ## Table of Contents
 - [Features](#features)
 
-## Features
+## Functions
+
+Here's a list of the functions implemented by funzig, in order of addition:
 
 - `pipe`
 - `reduce`
+- `map`
+- `find`
 
 For usage information, check out the tests in all the files `src`!
