@@ -5,7 +5,7 @@ pub const pipe = @import("src/pipe.zig").pipe;
 pub const reduce = @import("src/reduce.zig").reduce;
 
 comptime {
-    _ = std.meta.refAllDecls(@This());
+    _ = std.testing.refAllDecls(@This());
 }
 
 test "Combo!" {
